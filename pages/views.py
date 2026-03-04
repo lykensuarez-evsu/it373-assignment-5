@@ -18,7 +18,7 @@ def hello(request, name):
 
 def gallery(request):
     # Assume images placed in pages/static/img/
-    images = ["img1.jpg", "img2.jpg", "img3.jpg"]
+    images = ["img1.png", "img2.png", "img3.png"]
     return render(request, "gallery.html", {"images": images})
 
 def page_not_found_view(request, exception):
